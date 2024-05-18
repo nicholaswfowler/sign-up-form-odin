@@ -3,20 +3,30 @@
     src: url(assets/Norse-Bold.otf);
 }
 
+body{
+    margin: 0;
+}
+
+input, label{
+    display: block;
+    font-size: 2vh;
+    font-weight: normal;
+}
+
 #content{
     display: flex;
 }
 
 .logo_area{
-    width: 30vw;
+    width: 40vw;
     position: relative;
 }
 
 #bg{
     height: 100vh;
-    width: 30vw; 
+    width: 40vw; 
     position: absolute;
-    margin-right: 5vw;
+    margin-right: 15vw;
 }
 
 #logo{    
@@ -32,8 +42,54 @@
     font-family: "Norse Bold";
 }
 
-
-
 .form_area{
     width: 60vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info_text{
+    padding: 3vh;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.form_info{
+    box-shadow: 0px 0px 4px 0px;
+    padding: 3vh 5vh;
+}
+
+.form_fields{
+    display: flex;
+    gap: 3vw;
+}
+
+input:invalid{
+    border-color: red;
+    border-radius: 3px;
+}
+
+input:focus{
+    border-color: blue;
+}
+
+button{
+    margin: 3vh;
+    background-color: #596D48;
+    color: white;
+    border-radius: 7px;
+    line-height: 7vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    font-weight: bold;
+    border: none;
+}
+
+.login_text{
+    margin: 0 0 0 3vh;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;
 }
